@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DE Frames</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+	<img id="Logo" src="{{ url_for('static', filename='logo.jpg') }}"/>
+	<p id="intro">{{intro}}</p>
+	<hr>
+	<ul>
+		<h1>B</h1>
+		{% for item in Bitems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>C</h1>
+		{% for item in Citems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>D</h1>
+		{% for item in Ditems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>F</h1>
+		{% for item in Fitems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>K</h1>
+		{% for item in Kitems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>N</h1>
+		{% for item in Nitems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>R</h1>
+		{% for item in Ritems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>S</h1>
+		{% for item in Sitems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+		<h1>T</h1>
+		{% for item in Titems %}
+		<a id="itemlink" href="/item/{{item}}"><li id="listeditem">{{ item }}</li></a>
+		{% endfor %}
+	</ul>
+</body>
+</html>

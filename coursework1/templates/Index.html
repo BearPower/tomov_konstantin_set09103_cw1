@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drone Empire</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+<img id="Logo" src="{{url_for('static', filename='logo.jpg')}}"/>
+<p id="intro">This site provides all the necessary information on all the drone parts needed to build your perfect drone for racing or camera use. All the parts listed on this website have been tested by our crew to get the most realistic real life performance and statistics, removing the marketing scheme. We are proud of the community and work put into developing this web app and will keep improving it as fast as we can.<p>
+<a href="/frame"><img id="btn" src="{{ url_for('static', filename='Framebtn.jpg') }}"/i></a>
+<a href="/flightcontroller"><img id="btn" src="{{ url_for('static', filename='flbtn.jpg') }}"/></a>
+<a href="/motors"><img id="btn" src="{{ url_for('static', filename='Motorbtn.jpg') }}"/></a>
+<a href="/esc"><img id="btn" src="{{ url_for('static', filename='escbtn.jpg') }}"/></a>
+<a href="/camera"><img id="btn" src="{{ url_for('static', filename='camerabtn.jpg') }}"/></a>
+<a href="/battery"><img id="btn" src="{{ url_for('static', filename='batterybtn.jpg') }}"/></a>
+</body>
+</html>

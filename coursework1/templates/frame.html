@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DE Frames</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<img id="Logo" src="{{url_for('static', filename='logo.jpg')}}"/>
+	<hr>
+	<h1 id="name">{{name}}</h1>
+	<img id="pic" src="{{url_for('static', filename=pic)}}"/><br>
+	<h2>MATERIAL: {{material}}.</h2>
+	<h2>FICNESS: {{fickness}}.</h2>
+	<h2>FRAME STYLE: {{style}}.</h2>
+	<h2>USE: {{use}}(recomendation not a rule!).</h2>
+	<h2>SIZE: {{size}}.</h2>
+	<h2>MOTORS MOUNTS: {{motors}}.</h2>
+	<h2>FC MOUNT: {{FC}}.</h2>
+	{% for item in video %}
+		<iframe width="800" hight="630" src="{{item}}"></iframe>
+	{% endfor %}
+	
+</body>
+</html>
